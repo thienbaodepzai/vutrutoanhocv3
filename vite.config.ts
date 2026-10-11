@@ -11,6 +11,7 @@ const __dirname = path.dirname(__filename);
 // Plugin ensuring GitHub Pages SPA compatibility (.nojekyll & 404.html fallback)
 function githubPagesSpaPlugin(): Plugin {
   return {
+    base: '/vutrutoanhocv3/',
     name: 'vite-plugin-github-pages-spa',
     closeBundle() {
       const distDir = path.resolve(__dirname, 'dist');
